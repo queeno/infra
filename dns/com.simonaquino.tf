@@ -45,3 +45,13 @@ resource "cloudflare_email_routing_catch_all" "simonaquino_com" {
   enabled = true
   name    = "Send to all emails to ${var.cloudflare_email_routing_catch_all_email_address}."
 }
+
+resource "cloudflare_web_analytics_site" "cv_analytics" {
+  account_id   = var.cloudflare_account_id
+  zone_tag     = cloudflare_zone.simonaquino_com.id
+  auto_install = false
+}
+
+output "analytics_token" {
+  value = cloudflare_web_analytics_site.cv_analytics.site_token
+}
