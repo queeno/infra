@@ -53,5 +53,6 @@ resource "cloudflare_web_analytics_site" "simonaquino_com" {
 }
 
 output "analytics_token" {
-  value = cloudflare_web_analytics_site.simonaquino_com
+  value       = nonsensitive(cloudflare_web_analytics_site.simonaquino_com.site_token)
+  description = "The public token for Cloudflare Web Analytics"
 }
