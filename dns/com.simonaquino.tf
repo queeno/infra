@@ -53,5 +53,5 @@ resource "cloudflare_web_analytics_site" "simonaquino_com" {
 }
 
 output "analytics_token" {
-  value = cloudflare_web_analytics_site.cv_analytics.site_token
+  value = cloudflare_web_analytics_site.simonaquino_com
 }
