@@ -14,7 +14,7 @@ resource "cloudflare_zone" "simonaquino_com" {
 }
 
 resource "cloudflare_dns_record" "simonaquino_com" {
-  for_each = { for record in local.records : "${record.type}.${record.name}" => record }
+  for_each = { for record in local.records : sha256(jsonencode(record)) => record }
 
   zone_id = cloudflare_zone.simonaquino_com.id
   name    = each.value.name
