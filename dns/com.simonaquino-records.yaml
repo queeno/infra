@@ -26,3 +26,7 @@
   type: TXT
   value: '"v=DMARC1; p=none; rua=mailto:cbb53cb783524ab189169c8b5128f549@dmarc-reports.cloudflare.net"'
   ttl: 1
+- name: "@"
+  type: TXT
+  value: '"google-site-verification=wX_0YUTG5Qrk-2zaskruZFZNBV0xxqks21t9dvo2FvI"'
+  ttl: 1
