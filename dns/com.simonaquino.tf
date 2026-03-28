@@ -1,5 +1,5 @@
 locals {
-  records = yamldecode(file("com.simonaquino-records.yaml"))
+  simonaquino_records = yamldecode(file("com.simonaquino-records.yaml"))
 }
 
 resource "cloudflare_zone" "simonaquino_com" {
@@ -14,7 +14,7 @@ resource "cloudflare_zone" "simonaquino_com" {
 }
 
 resource "cloudflare_dns_record" "simonaquino_com" {
-  for_each = { for record in local.records : sha256(jsonencode(record)) => record }
+  for_each = { for record in local.simonaquino_records : sha256(jsonencode(record)) => record }
 
   zone_id = cloudflare_zone.simonaquino_com.id
   name    = each.value.name
@@ -52,7 +52,7 @@ resource "cloudflare_web_analytics_site" "simonaquino_com" {
   auto_install = false
 }
 
-output "analytics_token" {
+output "simonaquino_analytics_token" {
   value       = nonsensitive(cloudflare_web_analytics_site.simonaquino_com.site_token)
   description = "The public token for Cloudflare Web Analytics"
 }
