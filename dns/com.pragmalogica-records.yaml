@@ -1,0 +1,36 @@
+- name: em798951
+  type: CNAME
+  value: return.smtp2go.net
+  ttl: 1
+- name: link
+  type: CNAME
+  value: track.smtp2go.net
+  ttl: 1
+- name: s798951._domainkey
+  type: CNAME
+  value: dkim.smtp2go.net
+  ttl: 1
+- name: "@"
+  type: CNAME
+  value: queeno.github.io
+  ttl: 1
+- name: www
+  type: CNAME
+  value: queeno.github.io
+  ttl: 1
+- name: "@"
+  type: TXT
+  value: '"v=spf1 include:_spf.mx.cloudflare.net ~all"'
+  ttl: 1
+- name: _dmarc
+  type: TXT
+  value: '"v=DMARC1; p=none; rua=mailto:aec9dc02fc994bdf8dc38735c545892d@dmarc-reports.cloudflare.net;"'
+  ttl: 1
+- name: "@"
+  type: TXT
+  value: '"google-site-verification=wX_0YUTG5Qrk-2zaskruZFZNBV0xxqks21t9dvo2FvI"'
+  ttl: 1
+- name: cf2024-1._domainkey
+  type: TXT
+  value: '"v=DKIM1; h=sha256; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiweykoi+o48IOGuP7GR3X0MOExCUDY/BCRHoWBnh3rChl7WhdyCxW3jgq1daEjPPqoi7sJvdg5hEQVsgVRQP4DcnQDVjGMbASQtrY4WmB1VebF+RPJB2ECPsEDTpeiI5ZyUAwJaVX7r6bznU67g7LvFq35yIo4sdlmtZGV+i0H4cpYH9+3JJ78km4KXwaf9xUJCWF6nxeD+qG6Fyruw1Qlbds2r85U9dkNDVAS3gioCvELryh1TxKGiVTkg4wqHTyHfWsp7KD3WQHYJn0RyfJJu6YEmL77zonn7p2SRMvTMP3ZEXibnC9gz3nnhR6wcYL8Q7zXypKTMD58bTixDSJwIDAQAB"'
+  ttl: 1
