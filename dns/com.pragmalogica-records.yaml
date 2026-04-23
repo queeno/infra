@@ -36,9 +36,9 @@
   ttl: 1
 - name: "20260423203252pm._domainkey"
   type: TXT
-  value: 'k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCKcszWMqDoBcw9b6l1CMFe7PtFi+aoFOm6kmSLjlSmWf8rCi1yUTCbLfqiE6qYxfieTosS7yPIPmPoiuCaCAs+x0j7WFAbA4V1JBLoP/luAEbgrf8vklAqUmhiJ9rOYEd+O1MiuJfXgIz6pVMQ7vaBFMO1UMNvXKQ0P0e+018mqQIDAQAB'
+  value: "'k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCKcszWMqDoBcw9b6l1CMFe7PtFi+aoFOm6kmSLjlSmWf8rCi1yUTCbLfqiE6qYxfieTosS7yPIPmPoiuCaCAs+x0j7WFAbA4V1JBLoP/luAEbgrf8vklAqUmhiJ9rOYEd+O1MiuJfXgIz6pVMQ7vaBFMO1UMNvXKQ0P0e+018mqQIDAQAB'"
   ttl: 1
 - name: "freeagent-mailer"
   type: CNAME
-  value: 'pm.mtasv.net'
+  value: pm.mtasv.net
   ttl: 1
